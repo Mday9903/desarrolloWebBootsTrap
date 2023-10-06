@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel=“stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"crossorigin=“anonymous"> -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary" id="navbar-burgers" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-burger" href="#">
+                    <img src="./Icons/logo-burger-color.png" alt="Logo de una hamburguesa">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav fs-4">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#section-burgers">Burgers
+                        <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-tips">Consejos y Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-news">Newsletters</a>
+                    </li>
+                    </ul>
+                </div>
+                <form class=" form-navbar d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Buscar">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+          </nav>
+    </header>
+
+      <div id="carouselExampleIndicators" class="carousel carousel-fade slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/slide/slide1.jpg" class="d-block w-100" alt="Imagen de hamburguesas a la parrilla">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide/slide2.jpg" class="d-block w-100" alt="Imagen hamburguesa">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/slide/slide3.jpg" class="d-block w-100" alt="Imagen persona preparando hamburguesas">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+    <main class="container-fluid p-0">
+        <section class="cont-tarjetas bg-dark row justify-content-center pb-5" id="section-burgers">
+            <h2 class="titulo-ppal text-center fw-bold ">NUESTRAS MEJORES RECETAS</h2>
+            <div class="tarjeta position-relative  col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger1.jpg" alt="Imagen de guacamole burger">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal1">Guacamole Burger</a>
+                    <!-- Modal1 -->
+                    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Guacamole Burger</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>4 hamburguesas</li>
+                                    <li>sal y pimienta</li>
+                                    <li>4 lonchas de queso pepper jack o similar</li>
+                                    <li>4 lonchas de queso pepper jack o similar</li>
+                                    <li>2 aguacates maduros</li>
+                                    <li>1/4 taza tomates cherry, picados</li>
+                                    <li>1 jalapeño, picado</li>
+                                    <li>zumo de 1 lima</li>
+                                    <li>4 panes de hamburguesa</li>
+                                </ul>
+                                <ol>
+                                    <li>Calienta la parrilla o la plancha a temperatura alta. Sazona las hamburguesas con sal y pimienta, y cocina unos 6 minutos por lado. Agrega el queso y deja que se derrita, 1 minuto.</li><br>
+                            
+                                    <li>Mientras tanto, en un tazón grande, tritura los aguacates. Agrega los tomates, los jalapeños y el zumo de limón, y sazone con sal.</li><br>
+                                
+                                    <li>Monta la hamburguesa con el guacamole y rodajas de jalapeños para un extra de picante.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger1.jpg" alt="Imagen de guacamole burger">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div>
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center" >
+                <img class="tarj-img rounded" src="./images/burger2.jpg" alt="Imagen Hamburguesa de sopa de cebolla francesa">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal2">Hamburguesa de sopa de cebolla francesa</a>
+                    <!-- Modal2 -->
+                    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Hamburguesa de sopa de cebolla francesa</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>4 hamburguesas</li>
+                                    <li>sal y pimienta</li>
+                                    <li>4 lonchas de queso suizo</li>
+                                    <li>1 cuch. de aceite de oliva virgen extra</li>
+                                    <li>1 cebolla grande, en rodajas</li>
+                                    <li>350 g de champiñones cremini o baby bella en rodajas</li>
+                                    <li>4 panes de hamburguesa</li>
+                                </ul>
+                                <ol>
+                                    <li><b>Calienta la parrilla</b> o la plancha a temperatura alta. Sazona las hamburguesas con sal y pimienta, y cocina 6 minutos por lado. Cubre con el queso y deja que se derrita, 1 minuto.</li><br>
+                            
+                                    <li><b>En una sartén grande</b> a fuego medio, calienta el aceite. Agrega la cebolla y cocina de 4 a 5 minutos, luego agrega los champiñones y cocina hasta que se liberen los líquidos y los champiñones estén dorados, de 8 a 10 minutos más.</li><br>
+                                
+                                    <li><b>Monta la hamburguesa:</b> cubre cada tapa inferior de los panes con hamburguesa, champiñones y cebollas; cubre con las tapas de los panes y sirve.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger2.jpg" alt="Imagen Hamburguesa de sopa de cebolla francesa">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+                
+                
+            </div>
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger3.jpg" alt="imagen hamburguesas de pollo">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal3">Chicken Burgers: hamburguesas de pollo</a>
+                    <!-- Modal3 -->
+                    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Chicken Burgers: hamburguesas de pollo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>650 g de pollo picado</li>
+                                    <li>3/4 cucharadita de pimentón ahumado</li>
+                                    <li>1 diente de ajo, picado</li>
+                                    <li>3 cebolletas, picadas</li>
+                                    <li>sal y pimienta</li>
+                                    <li>2 cuch. de aceite de oliva virgen extra</li>
+                                    <li>4 lonchas de queso cheddar</li>
+                                    <li>4 hojas de lechuga</li>
+                                    <li>2 tazas de ensalada de col</li>
+                                    <li>1 aguacate, en rodajas finas</li>
+                                    <li>1/4 cebolla roja pequeña, en rodajas finas</li>
+                                    <li>1 jalapeño, en rodajas finas</li>
+                                    <li>4 panes de hamburguesa brioche, abertos y ligeramente tostados</li>
+                                </ul>
+                                <ol>
+                                    <li><b>En un tazón grande</b> mezcla el pollo, el pimentón, el ajo y las cebollas verdes, y sazona con sal y pimienta. Divide la mezcla en 4 hamburguesas.</li><br>
+                            
+                                    <li><b>En una sartén grande</b> a fuego medio, calienta el aceite. Agrega las hamburguesas y cocina, volteando una vez, hasta que estén doradas, de 8 a 10 minutos. Cubre con queso cheddar, tapa y cocina hasta que se derrita, 2 minutos. Retira del fuego y transfiere las hamburguesas a un plato.</li><br>
+                                
+                                    <li><b>Monta la hamburguesa:</b> con la lechuga, la ensalada de col, las hamburguesas de pollo, el aguacate, la cebolla roja, el jalapeño y más ensalada de col encima de los panecillos inferiores. Tapa con la parte de arriba de los panes.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger3.jpg" alt="imagen hamburguesas de pollo">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div>
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger4.jpg" alt="Imagen de una Pizza burger">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal4">Pizza-burger</a>
+                    <!-- Modal4 -->
+                    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Pizza-burger</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>500 g de carne picada</li>
+                                    <li>2 dientes de ajo, picados</li>
+                                    <li>1/4 taza perejil recién picado</li>
+                                    <li>sal y pimienta</li>
+                                    <li>2 cuch. de aceite vegetal</li>
+                                    <li>2 y 1/2 tazas de marinara</li>
+                                    <li>4 lonchas de queso mozzarella</li>
+                                    <li>12 rebanadas de peperoni</li>
+                                    <li>4 panes de hamburguesa</li>
+                                    <li>2 cuch. mantequilla derretida</li>
+                                    <li>2 cucharaditas de ajo en polvo</li>
+                                    <li>1 cucharadita de sazonador italiano</li>
+                                    <li>1/4 taza queso parmesano recién rallado</li>
+                                </ul>
+                                <ol>
+                                    <li><b>Precalentar el horno a 175 °C.</b> En un tazón mediano, mezcla la carne picada, el ajo y el perejil. Forma 4 hamburguesas del mismo tamaño y sazona ambos lados con sal y pimienta.</li><br>
+                            
+                                    <li><b>Calienta el aceite</b> en una sartén grande a fuego medio-alto. Agrega las hamburguesas y cocina, de 4 a 5 minutos a fuego medio. Voltea y vierte inmediatamente 2 tazas de marinara alrededor de ellas en la sartén. Baja el fuego y cocina durante otro minuto, luego cubre cada hamburguesa con queso y rodajas de pepperoni. Tapa la sartén y cocina hasta que el queso se derrita, unos 3 minutos más.</li><br>
+                                
+                                    <li><b>Mientras tanto, </b> cepille la mantequilla derretida en el interior de cada mitad de los panes y espolvorea con ajo en polvo, condimento italiano y queso parmesano. Hornea hasta que estén dorados, unos 10 minutos.</li><br>
+
+                                    <li><b>Extiende la 1/2 taza de marinara </b> restante en los panecillos inferiores, coloca las hamburguesas y tapa con las mitades superiores de los panes.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger4.jpg" alt="Imagen de una Pizza burger">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div>
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger5.jpg" alt="Imagen de Hamburguesa de pavo">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal5">Hamburguesa de pavo</a>
+                    <!-- Modal5 -->
+                    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Hamburguesa de pavo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>500 de carne de pavo picada</li>
+                                    <li>1 huevo grande, batido</li>
+                                    <li>2 dientes de ajo, picados</li>
+                                    <li>1 cuch. de salsa inglesa (Worcestershire)</li>
+                                    <li>2 cuch. de perejil recién picado</li>
+                                    <li>sal y pimienta</li>
+                                    <li>1 cuch. de aceite de oliva virgen extra</li>
+                                    <li>panes de hamburguesa</li>
+                                    <li>lechuga</li>
+                                    <li>tomates en rodajas</li>
+                                    <li>mayonesa</li>
+                                </ul>
+                                <ol>
+                                    <li><b>En un tazón grande</b> , mezcla el pavo, el huevo, el ajo, la salsa Worcestershire y el perejil, luego sazona con sal y pimienta. Forma cuatro hamburguesas planas.</li><br>
+                            
+                                    <li><b>En una sartén mediana</b> a fuego medio, calienta el aceite. Cocina las hamburguesas hasta que estén doradas, 5 minutos por lado.</li><br>
+                                
+                                    <li><b>Sirve en un panecillo</b> con el resto de ingredientes.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger5.jpg" alt="imagen de Hamburguesa de pavo">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div>
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger6.jpg" alt="Imagen de Hamburguesas de falafel">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal6">Hamburguesas de falafel</a>
+                    <!-- Modal6 -->
+                    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Hamburguesas de falafel</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>450 g de garbanzos cocidos</li>
+                                    <li>1 cebolla roja pequeña, picada</li>
+                                    <li>2 dientes de ajo, picados</li>
+                                    <li>1/2 taza hojas de perejil</li>
+                                    <li>4 cebollas verdes, picadas en trozos grandes</li>
+                                    <li>1 cucharadita de comino molido</li>
+                                    <li>1 cucharadita de cilantro molido</li>
+                                    <li>1/4 taza de harina</li>
+                                    <li>sal y pimienta</li>
+                                    <li>1/4 taza aceite vegetal</li>
+                                    <li>1 taza de yogur griego natural</li>
+                                    <li>1 taza de pepino picado muy fino</li>
+                                    <li>2 cuch. eneldo recién picado</li>
+                                    <li>zumo de 1 limón</li>
+                                    <li>4 panes de hamburguesa</li>
+                                    <li>lechuga</li>
+                                    <li>rodajas de tomate</li>
+                                </ul>
+                                <ol>
+                                    <li><b>Precalienta el horno a 190 °C.</b> Hornea los garbanzos en una bandeja hasta que empiecen a abrirse, de 8 a 10 minutos. Deja enfriar un poco.</li><br>
+                            
+                                    <li><b>En un procesador de alimentos</b> equipado con una hoja de metal, tritura los garbanzos, la cebolla, el perejil, las cebollas verdes, el comino y el cilantro. Mezcle hasta crear una pasta espesa y luego transfiérela a un tazón grande. Añade la harina y sazona con sal y pimienta. Forme 4 hamburguesas grandes.</li><br>
+                                
+                                    <li><b>En una sartén grande</b> a fuego medio-alto, caliente el aceite. Agrega las hamburguesas y cocina hasta que estén doradas, unos 3 minutos por lado.</li>
+
+                                    <li><b>Prepara salsa de yogur</b> y eneldo: en un tazón mediano, mezcla el yogur, el pepino, el eneldo y el zumo de limón.</li>
+
+                                    <li><b>Monta las hamburguesas:</b> coloca una hamburguesa en cada panecillo inferior y cubre con salsa de yogur, lechuga y rodajas de tomate. Tapa con los panes restantes.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger6.jpg" alt="Imagen hamburguesa falafel">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div>      
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger7.jpg" alt="Imagen de Hamburguesas de salmón estilo griego">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal7">Hamburguesas de salmón estilo griego</a>
+                    <!-- Modal7 -->
+                    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Hamburguesas de salmón estilo griego</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>800 g de salmón sin piel, picado</li>
+                                    <li>1 huevo grande</li>
+                                    <li>2 cuch. de cebollino fresco picado</li>
+                                    <li>2 cuch. de eneldo fresco picado</li>
+                                    <li>1/2 cucharadita de orégano</li>
+                                    <li>1/2 cucharadita de ralladura de limón</li>
+                                    <li>sal y pimienta</li>
+                                    <li>aceite de oliva</li>
+                                    <li>1 taza de queso feta desmenuzado</li>
+                                    <li>1 taza de yogur griego natural</li>
+                                    <li>1 diente de ajo pequeño, picado</li>
+                                    <li>1 cuch. de menta fresca picada</li>
+                                    <li>1 cuch. de zumo de limón fresco</li>
+                                    <li>cebolla roja en rodajas, pepinos rallados y tomates en rodajas, para servir</li>
+                                    <li>4 panes de pita tostados</li>
+                                </ul>
+                                <ol>
+                                    <li><b>En un procesador de alimentos</b> o batidora de alimentos, mezcla el salmón y el huevo y transfiere a un tazón grande. Agrega las cebolletas, el eneldo, el orégano, la ralladura de limón, una pizca de sal y un poco de pimienta. Con las manos húmedas, forme 4 hamburguesas.</li><br>
+                            
+                                    <li><b>Para la salsa:</b> en un tazón mediano, mezcla el yogur, el queso feta, el ajo, la menta y el zumo de limón. Condimenta con sal y pimienta.</li><br>
+                                
+                                    <li><b>Calienta la parrilla</b> y engrase la rejilla. Cepilla la parte superior de las hamburguesas de salmón con aceite y colócalas en la parrilla, con el lado aceitado hacia abajo. Cepilla con más aceite y cocina hasta que estén doradas, 4 minutos por lado. Monta las hamburguesas en pan pita con salsa, tomate, cebolla y pepinos.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger7.jpg" alt="Imagen de Hamburguesas de salmón estilo griego">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div>      
+            <div class="tarjeta position-relative col-xxl-3 col-lg-4 col-md-5  d-flex justify-content-center">
+                <img class="tarj-img rounded" src="./images/burger8.jpg" alt="Imagen de Hamburguesa en la Air Fryer">
+                <div class="info-tarj position-absolute top-0 row h-100 w-100 bg-dark bg-opacity-50 shadow rounded">
+                    <a href="" class="tarj-texto col-lg-12 text-center align-self-end fw-bold fs-5 pb-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#modal8">Hamburguesa en la Air Fryer</a>
+                    <!-- Modal7 -->
+                    <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"> Receta Hamburguesa en la Air Fryer</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body ">
+                                
+                                <p>INGREDIENTES:</p>
+                                <ul>
+                                    <li>500 g de carne picada</li>
+                                    <li>2 dientes de ajo, picados</li>
+                                    <li>1 cuch. de salsa de soja</li>
+                                    <li>sal y pimienta</li>
+                                    <li>4 lonchas de queso americano</li>
+                                    <li>4 panes de hamburguesa</li>
+                                    <li>mayonesa</li>
+                                    <li>lechuga</li>
+                                    <li>tomates en rodajas</li>
+                                    <li>cebolla roja en rodajas finas</li>
+                                </ul>
+                                <ol>
+                                    <li><b>Mezcla la carne</b>, el ajo y la salsa de soja. Forma 4 hamburguesas y sazona ambos lados con sal y pimienta.</li><br>
+                            
+                                    <li><b>Coloca las hamburguesas en la airfyer</b> y cocina a 190 °C durante 4 minutos por lado. Retira e inmediatamente cubre con una loncha de queso.</li><br>
+                                
+                                    <li><b>Unta los panes de hamburguesa</b> con mayonesa, luego cubre con lechuga, hamburguesas, tomates y cebollas.</li>
+                                </ol>
+                                <div class="d-flex justify-content-center">
+                                    <img class="tarj-img rounded " src="./images/burger8.jpg" alt="Imagen de Hamburguesa en la Air Fryer">
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-heart col-lg-4 " viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-chat-left-dots col-lg-4" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="tarj-icono bi bi-download col-lg-4" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>  
+                </div>
+            </div> 
+            <div class="col-12 d-flex justify-content-center">
+                <button class="boton-mas col-1 btn btn-primary fs-4">Mostrar más</button>
+            </div>     
+        </section>
+        <section class="section-tips container-fluid" id="section-tips">
+            <div class="cont-tarj-tips row justify-content-center gap-2 d-flex">
+                <h2 class="titulo-ppal text-center pb-5">Te compartimos algunos tips de cocina</h2>
+                <div class="tarj-tips col col-lg-3 col-md-4 col-sm-6  rounded justify-content-center align-items-center border border-white ">
+                    <h3 class="pb-3 fw-bold text-center">Pelar huevos duros fácilmente</h3>
+                    <p class="fs-4">Si quieres pelar fácilmente los huevos duros solo tienes que añadir un buen chorro de vinagre al agua de cocción, de esta manera, el ácido ablandará la cáscara y hará que los huevos se pelen con mayor facilidad.</p>
+                </div>
+                <div class="tarj-tips col col-lg-3 col-md-4 col-sm-6 rounded border border-whit">
+                    <h3 class="pb-3 fw-bold text-center">Hacer mayonesa en 1 minuto y sin cortarse</h3>
+                    <p class="fs-4">El truco para evitar que la elaboración de una mayonesa te salga perfecta y en un momento, sin tener que repetirla, es que todos los alimentos estén a la misma temperatura, así que si no quieres correr el riesgo de que se te corte la mahonesa, necesitarás que el huevo y el aceite estén a la misma temperatura.</p>
+                </div>
+                <div class="tarj-tips col col-lg-3 col-md-4 col-sm-6 rounded border border-whit">
+                    <h3 class="pb-3 fw-bold text-center">Quitar la piel a las patatas hervidas de manera fácil</h3>
+                    <p class="fs-4">Primero al sacarlas del agua hirviendo tienes que pasar las patatas por agua muy fría durante unos 30 segundos, después les haces unos cortes superficiales y la piel saldrá prácticamente sola.</p>
+                </div>
+                <div class="tarj-tips col col-lg-3 col-md-4 col-sm-6 rounded border border-whit ">
+                    <h3 class="pb-3 fw-bold text-center">Pelar cebollas sin llorar</h3>
+                    <p class="fs-4">Para que no llores mientras que troceas las cebollas te aconsejamos meter las cebollas antes en el congelador unos 20 minutos, de esta manera conseguirás evitar ese lagrimeo al cortarlas que tanto nos molesta.</p>
+                </div>
+                <div class="tarj-tips col col-lg-3 col-md-4 col-sm-6 rounded border border-whit">
+                    <h3 class="pb-3 fw-bold text-center">Conservar las hierbas aromáticas siempre frescas</h3>
+                    <p class="fs-4">La mejor manera de tener las hierbas aromáticas siempre frescas en la cocina es cortarlas, ponerlas en una cubitera, cubrirlas con aceite de oliva y después congelarlas, ya que de esta manera la humedad del aceite favorecerá una buena conservación de las hierbas.</p>
+                </div>
+                <div class="tarj-tips col col-lg-3 col-md-4 col-sm-6 rounded border border-whit">
+                    <h3 class="pb-3 fw-bold text-center">Quitar el olor de ajo de las manos</h3>
+                    <p class="fs-4">Seguro que siempre que pelas ajos se te queda el olor pegado en las manos. Pero si quieres resolver este problema, cuando termines con los ajos, frótate las manos debajo del agua con una superficie de acero inoxidable (como la hoja del cuchillo) durante 30 segundos y verás como desaparecerá el olor a ajo.</p>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="boton-mas col-1 btn btn-primary fs-4">Mostrar más</button>
+                </div> 
+            </div>
+        </section>
+        <section class=" section-news container-fluid bg-dark pt-5 d-flex justify-content-center" id="section-news">
+            <form ></form>
+            <form action="POST" class=" form-news row justify-content-center align-items-center gap-5">
+                <h3 class="col-lg-12 text-center">Ingresa tu correo electrónico y sumate a nuestros newsletters!</h3>
+                <div class="col col-lg-4">
+                    <input class="input-news input-group text-start fw-bold p-4" type="text" placeholder="Tu email aquí...">
+                </div>
+                <button class=" col-lg-1  btn btn-warning fs-4">Enviar</button>
+            </form>
+        </section>
+        <footer class="container-fluid footer bg-primary ">
+            <h3 class="text-center p-4">Seguinos en nuestras redes!</h3>
+            <div class="row bg-primary justify-content-center pb-5 gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram social-icon" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter social-icon" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok social-icon" viewBox="0 0 16 16">
+                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook social-icon" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <div class="d-flex justify-content-center">
+                    <hr class="">
+                </div>
+                <a href="" class="fs-5 text-decoration-none text-light text-center">Sitio web desarrollado por Marcos Day</a>
+            </div>
+        </footer>
+        <a href="#navbar-burgers" class="boton-subir-pagina  text-decoration-none bg-warning d-flex justify-content-center rounded fs-3">
+            ^
+        </a>
+        
+        
+    </main>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>

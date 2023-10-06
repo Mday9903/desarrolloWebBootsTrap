@@ -1,0 +1,136 @@
+/* :root {
+    --main-text-color: white;
+}
+ */
+
+
+#navbarColor01{
+    flex-grow: 0;
+}
+.navbar{
+    padding: 0 5rem;
+}
+.logo-burger>img{
+    width: 15rem !important;
+}
+ .carousel-item{
+    /* height: 50vh; */
+}  
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    width: 10rem !important;
+    background-size: 100% 300%;
+}
+.titulo-ppal{
+    padding-bottom: 6rem;
+}
+.cont-tarjetas{
+    margin: 0;
+    padding-top: 6rem;
+}
+.tarjeta{
+    /* width: 20rem;
+    height: 20rem; */
+    /* background-image:url(./images/delish-burgers-guacamole.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.tarj-texto:hover{
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+.tarj-img{
+    width: 20rem;
+    height: 90%;
+}
+.info-tarj{
+    margin: 0;
+    width: 20rem !important;
+    height: 90% !important;;
+}
+.cont-tarjetas{
+    row-gap: 2rem;
+}
+.tarj-icono{
+    cursor: pointer;
+}
+.tarj-texto{
+    color: white;
+}
+.tarj-texto:hover{
+    text-decoration: underline !important;
+}
+.boton-mas{
+    margin-top: 2rem;
+    min-width: 10rem;
+    max-width: 10rem;
+}
+.section-tips{
+    margin: 10rem 0rem !important;
+}
+.tarj-tips{
+    padding: 2rem 3rem;
+    margin: 1rem;
+    text-align: justify;
+}
+.section-news{
+    padding: 7rem 0rem !important;
+}
+.input-news{
+    height: 3rem;
+}
+.footer{
+    height: 100px;
+}
+.social-icon{
+    width: auto;
+    scale: 1.5;
+    margin: 1rem 0rem;
+}
+hr{
+    width: 25% !important;
+    border-width: 3px;
+    border-color: white;
+    background-color: white;
+    opacity: 1;
+
+}
+.boton-subir-pagina{
+    color: white;
+    position: fixed;
+    left: 95vw !important;
+    bottom: 50px !important;
+    width: 35px !important;
+    height: 35px !important;
+}
+
+
+
+@media (min-width:2000px){ 
+    
+    .cont-tarjetas{
+        padding-left: 15%;
+        padding-right: 15%;
+    } 
+}
+@media(max-width:1000px){
+    .form-news{
+        max-width: 800px;
+    }
+    .boton-subir-pagina{
+        left: 85vw !important;
+    }
+}
+@media(max-width:800px ){
+    .navbar{
+        padding: 0 0;
+    }
+    .logo-burger>img{
+        width: 10rem !important;
+    }
+
+}
+
